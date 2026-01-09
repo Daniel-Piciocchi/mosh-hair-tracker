@@ -15,7 +15,7 @@ function SnapshotCard({ snapshot, onDelete, onClick, onEdit }: SnapshotCardProps
   const [showConfirm, setShowConfirm] = useState(false);
 
   const handleDelete = async (e?: React.MouseEvent) => {
-    e.stopPropagation();
+    e?.stopPropagation();
     setIsDeleting(true);
     try {
       await onDelete(snapshot.id);
