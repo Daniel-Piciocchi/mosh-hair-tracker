@@ -53,10 +53,10 @@ function HomePage() {
                                 Mosh Hair Tracker
                             </span>
                         </div>
-                        <Link to="/new-snapshot">
+                        <Link to="/new-snapshot" className="flex-shrink-0">
                             <Button
                                 variant="primary"
-                                className="px-1 sm:px-2 md:px-5 flex-shrink-0"
+                                className="px-1 sm:px-2 md:px-5"
                             >
                                 <svg
                                     className="h-4 w-4"
