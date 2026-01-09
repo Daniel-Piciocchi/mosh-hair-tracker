@@ -53,11 +53,8 @@ function HomePage() {
                                 Mosh Hair Tracker
                             </span>
                         </div>
-                        <Link to="/new-snapshot" className="flex-shrink-0">
-                            <Button
-                                variant="primary"
-                                className="px-1 sm:px-2 md:px-5"
-                            >
+                        <Link to="/new-snapshot">
+                            <Button variant="primary" size="sm" className="whitespace-nowrap">
                                 <svg
                                     className="h-4 w-4"
                                     fill="none"
@@ -71,7 +68,7 @@ function HomePage() {
                                         d="M12 4v16m8-8H4"
                                     />
                                 </svg>
-                                <span className="hidden md:inline">
+                                <span className="hidden md:inline ml-2">
                                     New Snapshot
                                 </span>
                             </Button>
