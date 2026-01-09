@@ -54,7 +54,10 @@ function HomePage() {
                             </span>
                         </div>
                         <Link to="/new-snapshot">
-                            <Button variant="primary" className="px-2 sm:px-5 flex-shrink-0">
+                            <Button
+                                variant="primary"
+                                className="px-1 sm:px-2 md:px-5 flex-shrink-0"
+                            >
                                 <svg
                                     className="h-4 w-4"
                                     fill="none"
@@ -68,7 +71,7 @@ function HomePage() {
                                         d="M12 4v16m8-8H4"
                                     />
                                 </svg>
-                                <span className="hidden sm:inline">
+                                <span className="hidden md:inline">
                                     New Snapshot
                                 </span>
                             </Button>
