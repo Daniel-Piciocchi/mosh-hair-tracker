@@ -68,7 +68,7 @@ function HomePage() {
                                         d="M12 4v16m8-8H4"
                                     />
                                 </svg>
-                                New Snapshot
+                                <span className="hidden sm:inline">New Snapshot</span>
                             </Button>
                         </Link>
                     </div>
