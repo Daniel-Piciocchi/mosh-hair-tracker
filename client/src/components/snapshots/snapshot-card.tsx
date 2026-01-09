@@ -7,14 +7,14 @@ interface SnapshotCardProps {
   snapshot: Snapshot;
   onDelete: (id: string) => Promise<void>;
   onClick: (snapshot: Snapshot) => void;
-  onEdit: (snapshot: Snapshot) => void;
+  onEdit?: (snapshot: Snapshot) => void;
 }
 
 function SnapshotCard({ snapshot, onDelete, onClick, onEdit }: SnapshotCardProps) {
   const [isDeleting, setIsDeleting] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
 
-  const handleDelete = async (e: React.MouseEvent) => {
+  const handleDelete = async (e?: React.MouseEvent) => {
     e.stopPropagation();
     setIsDeleting(true);
     try {
@@ -25,13 +25,13 @@ function SnapshotCard({ snapshot, onDelete, onClick, onEdit }: SnapshotCardProps
     }
   };
 
-  const handleDeleteClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handleDeleteClick = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
     setShowConfirm(true);
   };
 
-  const handleCancelClick = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handleCancelClick = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
     setShowConfirm(false);
   };
 
@@ -102,7 +102,7 @@ function SnapshotCard({ snapshot, onDelete, onClick, onEdit }: SnapshotCardProps
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                onEdit(snapshot);
+                onEdit?.(snapshot);
               }}
               className="rounded-lg p-2 text-gray-400 transition-colors hover:bg-mosh-accent hover:text-mosh-primary"
               aria-label="Edit snapshot"
