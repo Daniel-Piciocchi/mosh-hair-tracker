@@ -123,7 +123,7 @@ function NewSnapshotPage() {
         {step !== 'review' && (
           <div className="card-elevated overflow-hidden">
             {/* Step Header */}
-            <div className="bg-gradient-to-r from-mosh-primary to-teal-500 px-6 py-4 text-white">
+            <div className="bg-linear-to-r from-mosh-primary to-teal-500 px-6 py-4 text-white">
               <h2 className="text-xl font-semibold">
                 {step === 'front' ? 'Front View Photo' : 'Top View Photo'}
               </h2>
@@ -205,7 +205,7 @@ function NewSnapshotPage() {
         {step === 'review' && frontPhoto && topPhoto && (
           <div className="card-elevated overflow-hidden">
             {/* Review Header */}
-            <div className="bg-gradient-to-r from-mosh-primary to-teal-500 px-6 py-4 text-white">
+            <div className="bg-linear-to-r from-mosh-primary to-teal-500 px-6 py-4 text-white">
               <h2 className="text-xl font-semibold">Review Your Snapshot</h2>
               <p className="mt-1 text-white/80 text-sm">
                 Make sure both photos look good before saving

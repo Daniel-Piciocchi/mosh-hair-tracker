@@ -161,7 +161,7 @@ function SnapshotModal({ snapshot, onClose, onUpdate, onDelete }: SnapshotModalP
                 </div>
               </div>
             ) : (
-              <div className="rounded-xl border border-gray-200 bg-gray-50 p-4 min-h-[80px]">
+              <div className="rounded-xl border border-gray-200 bg-gray-50 p-4 min-h-20">
                 {snapshot.notes ? (
                   <p className="text-sm text-gray-700 whitespace-pre-wrap">{snapshot.notes}</p>
                 ) : (
