@@ -1,1 +1,1 @@
-export { cn, formatDate, formatDateTime } from './utils.ts';
+export { cn, formatDate } from './utils.ts';
