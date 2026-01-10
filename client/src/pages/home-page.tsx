@@ -54,7 +54,11 @@ function HomePage() {
                             </span>
                         </div>
                         <Link to="/new-snapshot">
-                            <Button variant="primary" size="sm" className="whitespace-nowrap">
+                            <Button
+                                variant="primary"
+                                size="sm"
+                                className="whitespace-nowrap"
+                            >
                                 <svg
                                     className="h-4 w-4"
                                     fill="none"

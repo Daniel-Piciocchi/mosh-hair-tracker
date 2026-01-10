@@ -37,7 +37,12 @@ function Button({
             type={type}
             onClick={onClick}
             disabled={disabled}
-            className={cn('btn', variantClasses[variant], sizeClasses[size], className)}
+            className={cn(
+                'btn',
+                variantClasses[variant],
+                sizeClasses[size],
+                className
+            )}
         >
             {children}
         </button>
